@@ -35,8 +35,8 @@ if not args.plot_only:
     rr = te.loadSBMLModel(sbml_str)
     rr.reset()
     rr.setIntegrator('cvode')
-    rr.integrator.absolute_tolerance = 1e-8
-    rr.integrator.relative_tolerance = 1e-8
+    rr.integrator.absolute_tolerance = 1e-7
+    rr.integrator.relative_tolerance = 1e-7
     rr.integrator.setValue('stiff', True)
 
     

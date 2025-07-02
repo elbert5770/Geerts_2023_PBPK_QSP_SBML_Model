@@ -5,7 +5,7 @@ It first runs to steady state without antibody dosing, then uses those results a
 for a simulation with antibody dosing.
 """
 import os
-os.environ['XLA_FLAGS'] = '--xla_cpu_use_thunk_runtime=false'
+# os.environ['XLA_FLAGS'] = '--xla_cpu_use_thunk_runtime=false'
 import jax
 jax.config.update("jax_enable_x64", True)
 import jax.numpy as jnp

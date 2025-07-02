@@ -1,5 +1,5 @@
 import os
-os.environ['XLA_FLAGS'] = '--xla_cpu_use_thunk_runtime=false'
+# os.environ['XLA_FLAGS'] = '--xla_cpu_use_thunk_runtime=false'
 import jax
 jax.config.update("jax_enable_x64", True)
 import jax.numpy as jnp
